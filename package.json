@@ -1,0 +1,30 @@
+{
+  "name": "gulp-sass-vars-to-js",
+  "version": "0.1.0",
+  "description": "Export Sass variables to JavaScript",
+  "main": "index.js",
+  "author": "wisercoder",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wisercoder/gulp-sass-vars-to-js"
+  },
+  "keywords": [
+    "gulpplugin",
+    "sass",
+    "scss",
+    "javascript",
+    "typescript",
+    "variables"
+  ],
+  "devDependencies": {
+    "@types/node": "^6.0.87"
+  },
+  "dependencies": {
+    "plugin-error": "^1.0.0",
+    "through2": "^2.0.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "MIT"
+}
