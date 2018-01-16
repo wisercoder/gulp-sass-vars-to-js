@@ -43,7 +43,7 @@ Note that the identifier is defined with a $ in the first column and that there 
 
 Here's the resulting .ts file that's generated:
 
-```javscript
+```javascript
 // This file was automatically generated. Do not edit by hand.
 
 export const SideBarWidth = 250;
