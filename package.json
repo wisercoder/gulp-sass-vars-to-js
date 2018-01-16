@@ -1,6 +1,6 @@
 {
   "name": "gulp-sass-vars-to-js",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Export Sass variables to JavaScript",
   "main": "index.js",
   "author": "wisercoder",

@@ -27,3 +27,24 @@ gulp.task('sassvars', function() {
 gulp.task('default', ['sassvars'], function() {
 })
 ```
+
+Here's an example scss file:
+
+```scss
+$side-bar-width: 250px;
+
+.side-bar {
+   display: inline-block;
+   width: $side-bar-width;
+}
+```
+
+Note that the identifier is defined with a $ in the first column and that there is a semicolon at the end.
+
+Here's the resulting .ts file that's generated:
+
+```javscript
+// This file was automatically generated. Do not edit by hand.
+
+export const SideBarWidth = 250;
+```

@@ -5,7 +5,9 @@ var PLUGIN_NAME = 'gulp-sass-vars-to-js';
 
 function createJavaScriptIdentifier(sassId) {
     var items = sassId.split('-');
-    var casedItems = items.map(function (s) { return s[0].toUpperCase() + s.substr(1); });
+    var casedItems = items.map(function (s) {
+        return s ? (s[0].toUpperCase() + s.substr(1)) : '';
+    });
     return casedItems.join('');
 }
 
@@ -29,7 +31,7 @@ function processSass(sass) {
     return stream;
 }
 
-function gulpSassVarsToJs(sass) {
+function gulpSassVarsToJs() {
     return through.obj(function (file, encoding, callback) {
         if (file.isNull()) {
             return callback(null, file);
